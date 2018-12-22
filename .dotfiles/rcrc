@@ -1,0 +1,3 @@
+TAGS="macos smu"
+UNDOTTED="bin"
+EXCLUDES="base/*"
