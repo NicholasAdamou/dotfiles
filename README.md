@@ -12,7 +12,7 @@ To install my `dotfiles`, just run the snippet in [`iTerm2`](https://www.iterm2.
 understand [what it does](src/.dotfiles/tag-macos/modules/install.sh). Seriously, **DON'T**!)
 
 ```bash
-bash <(curl --progress-bar -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/master/.dotfiles/tag-macos/modules/install.sh) --git
+bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/master/.dotfiles/tag-macos/modules/install.sh) --git
 ```
 
 ⚠️ Please note that more about the installation process can be found at [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up).
