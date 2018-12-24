@@ -1,2 +1,2 @@
 TAGS="macos smu"
-EXCLUDES="base/* tag-smu/modules/install.sh"
+EXCLUDES="base/* tag-smu/modules/install.sh tag-smu/modules/preferences/apps/Alfred tag-smu/modules/preferences/apps/iTerm2 tag-smu/modules/preferences/apps/vscode"
