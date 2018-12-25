@@ -2,3 +2,4 @@
 *.iml
 .dotfiles/base
 .dotfiles/tag-smu
+.DS_STORE
