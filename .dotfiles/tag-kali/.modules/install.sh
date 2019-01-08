@@ -11,7 +11,7 @@ readonly SMU_VERSION=${SMU_VERSION:-"kali-linux"}
 # Where to install set-me-up
 SMU_HOME_DIR=${SMU_HOME_DIR:-"${HOME}/set-me-up"}
 
-readonly smu_download="https://github.com/nicholasadamou/dotfiles/archive/${SMU_VERSION}.zip"
+readonly smu_download="https://github.com/nicholasadamou/dotfiles/tarball/${SMU_VERSION}"
 readonly smu_blueprint_download="https://github.com/${SMU_BLUEPRINT}/tarball/${SMU_BLUEPRINT_BRANCH}"
 
 function mkcd() {
@@ -75,7 +75,7 @@ function confirm() {
 function obtain() {
     local -r download_url="${1}"
 
-    curl --progress-bar -L "${download_url}" | tar -x --strip-components 1 --exclude={README.md,LICENSE,.gitignore}
+    curl --progress-bar -L "${download_url}" | tar -xz --strip-components 1 --exclude={README.md,LICENSE,.gitignore}
 }
 
 function use_curl() {
