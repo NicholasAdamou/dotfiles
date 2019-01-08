@@ -10,7 +10,7 @@ To install my `dotfiles`, just run the snippet in `terminal` or `terminal`:
 understand [what it does](.dotfiles/tag-kali/.modules/install.sh). Seriously, **DON'T**!)
 
 ```bash
-bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/kali-linux/.dotfiles/tag-kali/.modules/install.sh) --git
+bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/kali-linux/.dotfiles/tag-kali/modules/install.sh) --git
 ```
 
 That's it! ✨

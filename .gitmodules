@@ -4,3 +4,7 @@
 [submodule ".dotfiles/.config/bash-sensible"]
 	path = .dotfiles/config/bash-sensible
 	url = https://github.com/mrzool/bash-sensible
+[submodule ".dotfiles/utilities"]
+	path = .dotfiles/utilities
+	url = https://github.com/nicholasadamou/utilities
+	branch = linux
