@@ -187,7 +187,7 @@ symlink() {
 
 main() {
 
-    print_in_purple "  Base\n"
+    print_in_purple "  Base\n\n"
 
 	apt_install_from_file "packages"
 
