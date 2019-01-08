@@ -78,7 +78,7 @@ create_vimrc_local() {
 
 symlink() {
 
-    SYMLINK_DIR="$(cd tag-kali && pwd)"
+    SYMLINK_DIR="$(cd ../tag-kali && pwd)"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
