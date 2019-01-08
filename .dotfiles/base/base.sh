@@ -88,8 +88,7 @@ symlink() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # symlink files starting with `.*` to $HOME
-    while IFS= read -r -d '' file
-    do
+    for file in $(find "$SYMLINK_DIR" -maxdepth 1 -name ".*"); do
         fileName=$(basename "$file")
 
         file_to_symlink="$SYMLINK_DIR/$fileName"
@@ -97,7 +96,7 @@ symlink() {
         target="$HOME/$fileName"
 
         symlink "$file_to_symlink" "$target"
-    done < <(find "$SYMLINK_DIR" -maxdepth 1 -name ".*")
+    done
 
 }
 
