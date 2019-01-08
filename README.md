@@ -6,7 +6,7 @@ Personal Kali-Linux dotfiles, powered by debian-based [nicholasadamou/set-me-up]
 
 [![xkcd: Automation](http://imgs.xkcd.com/comics/automation.png)](http://xkcd.com/1319/)
 
-To install my `dotfiles`, just run the snippet in `terminal` or `terminal`:
+To install my `dotfiles`, just run the snippet in `terminal`:
 
 (⚠️ **DO NOT** run the `install` snippet if you don't fully
 understand [what it does](.dotfiles/tag-kali/.modules/install.sh). Seriously, **DON'T**!)
