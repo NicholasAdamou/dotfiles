@@ -1,6 +1,6 @@
-[submodule ".dotfiles/tmux/plugins/tpm"]
+[submodule ".dotfiles/.tmux/plugins/tpm"]
 	path = .dotfiles/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule ".dotfiles/config/bash-sensible"]
+[submodule ".dotfiles/.config/bash-sensible"]
 	path = .dotfiles/config/bash-sensible
 	url = https://github.com/mrzool/bash-sensible
