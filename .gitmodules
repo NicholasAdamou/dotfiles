@@ -8,3 +8,9 @@
 	path = .dotfiles/utilities
 	url = https://github.com/nicholasadamou/utilities
 	branch = linux
+[submodule ".dotfiles/tag-kali/config/bash-sensible"]
+	path = .dotfiles/tag-kali/config/bash-sensible
+	url = https://github.com/mrzool/bash-sensible
+[submodule ".dotfiles/tag-kali/tmux/plugins/tpm"]
+	path = .dotfiles/tag-kali/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
