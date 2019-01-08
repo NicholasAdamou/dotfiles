@@ -9,7 +9,7 @@ Personal MacOS dotfiles, powered by [nicholasadamou/set-me-up](https://github.co
 To install my `dotfiles`, just run the snippet in [`iTerm2`](https://www.iterm2.com/) or `terminal`:
 
 (⚠️ **DO NOT** run the `install` snippet if you don't fully
-understand [what it does](src/.dotfiles/tag-macos/modules/install.sh). Seriously, **DON'T**!)
+understand [what it does](.dotfiles/tag-macos/modules/install.sh). Seriously, **DON'T**!)
 
 ```bash
 bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/master/.dotfiles/tag-macos/modules/install.sh) --git
