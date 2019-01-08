@@ -76,7 +76,7 @@ create_vimrc_local() {
 
 }
 
-symlink() {
+symlink_dotfiles() {
 
     SYMLINK_DIR="$(cd ../tag-kali && pwd)"
 
@@ -116,7 +116,7 @@ main() {
 
     print_in_yellow "\n   Symlink dotfiles\n\n"
 
-    symlink
+    symlink_dotfiles
 
 }
 
