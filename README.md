@@ -15,7 +15,27 @@ understand [what it does](.dotfiles/tag-kali/.modules/install.sh). Seriously, **
 bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/kali-linux/.dotfiles/tag-kali/modules/install.sh) --git
 ```
 
+⚠️ Please note that more about the installation process can be found at [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-uptree/debian).
+
 That's it! ✨
+
+## What's inside
+
+1.  A `rcm` tag called [macos](.dotfiles/tag-macos) and an adapted `rcrc` file.
+2.  [A variety of modules](https://github.com/nicholasadamou/set-me-up/tree/master/.dotfiles/tag-smu/modules). Read more about the available modules in the [available modules](https://github.com/nicholasadamou/set-me-up#available-modules) section.
+3.  [Installer](.dotfiles/tag-macos/modules/install.sh) that is required to download `set-me-up` on top of my blueprint.
+
+## Credits
+
+-   [omares/set-me-up](https://github.com/omares/set-me-up) for the initial platform that [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up) was built on.
+-   [donnemartin/dev-setup](https://github.com/donnemartin/dev-setup)
+-   [mathiasbynens](https://github.com/mathiasbynens/dotfiles) for his popular [macOS script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos).
+-   [argbash.io](https://argbash.io/) enabling library free and sane argument parsing.
+-   [brew](https://brew.sh/) and [brew bundle](https://github.com/Homebrew/homebrew-bundle) for the awesome package management.
+-   [thoughtbot rcm](https://github.com/thoughtbot/rcm) for easy dotfile management.
+-   All of the authors of the installed applications via `set-me-up` , I am in no way connected to any of them.
+
+Should I miss your name on the credits list please let me know :heart:
 
 ## Liability
 
