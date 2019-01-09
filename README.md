@@ -29,7 +29,6 @@ That's it! ✨
 
 -   [omares/set-me-up](https://github.com/omares/set-me-up) for the initial platform that [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up) was built on.
 -   [donnemartin/dev-setup](https://github.com/donnemartin/dev-setup)
--   [mathiasbynens](https://github.com/mathiasbynens/dotfiles) for his popular [macOS script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos).
 -   [argbash.io](https://argbash.io/) enabling library free and sane argument parsing.
 -   [brew](https://brew.sh/) and [brew bundle](https://github.com/Homebrew/homebrew-bundle) for the awesome package management.
 -   [thoughtbot rcm](https://github.com/thoughtbot/rcm) for easy dotfile management.
