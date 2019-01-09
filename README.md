@@ -15,7 +15,7 @@ understand [what it does](.dotfiles/tag-kali/.modules/install.sh). Seriously, **
 bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/kali-linux/.dotfiles/tag-kali/modules/install.sh) --git
 ```
 
-⚠️ Please note that more about the installation process can be found at [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-uptree/debian).
+⚠️ Please note that more about the installation process can be found at [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian).
 
 That's it! ✨
 
@@ -27,7 +27,7 @@ That's it! ✨
 
 ## Credits
 
--   [omares/set-me-up](https://github.com/omares/set-me-up) for the initial platform that [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up) was built on.
+-   [omares/set-me-up](https://github.com/omares/set-me-up) for the initial platform that [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian) was built on.
 -   [donnemartin/dev-setup](https://github.com/donnemartin/dev-setup)
 -   [argbash.io](https://argbash.io/) enabling library free and sane argument parsing.
 -   [brew](https://brew.sh/) and [brew bundle](https://github.com/Homebrew/homebrew-bundle) for the awesome package management.
