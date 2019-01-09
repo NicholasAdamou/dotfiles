@@ -1,6 +1,6 @@
 # [Nicholas](https://github.com/nicholasadamou)’s Kali-Linux dotfiles
 
-Personal Kali-Linux dotfiles, powered by debian-based [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian) ✨
+Personal Kali-Linux dotfiles, powered by [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian) ✨
 
 ## Setup
 
