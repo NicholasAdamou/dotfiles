@@ -9,10 +9,10 @@ Personal Kali-Linux dotfiles, powered by [nicholasadamou/set-me-up](https://gith
 To install my `dotfiles`, just run the snippet in `terminal`:
 
 (⚠️ **DO NOT** run the `install` snippet if you don't fully
-understand [what it does](.dotfiles/tag-kali/.modules/install.sh). Seriously, **DON'T**!)
+understand [what it does](.dotfiles/modules/install.sh). Seriously, **DON'T**!)
 
 ```bash
-bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/kali-linux/.dotfiles/tag-kali/modules/install.sh) --git
+bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/kali-linux/.dotfiles/modules/install.sh) --git
 ```
 
 ⚠️ Please note that more about the installation process can be found at [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian).
@@ -23,7 +23,7 @@ That's it! ✨
 
 1.  A `rcm` tag called [kali](.dotfiles/tag-kali) and an adapted `rcrc` file.
 2.  [A variety of modules](https://github.com/nicholasadamou/set-me-up/tree/master/.dotfiles/tag-smu/modules). Read more about the available modules in the [available modules](https://github.com/nicholasadamou/set-me-up#available-modules) section.
-3.  [Installer](.dotfiles/tag-kali/modules/install.sh) that is required to download `set-me-up` on top of my blueprint.
+3.  [Installer](.dotfiles/modules/install.sh) that is required to download `set-me-up` on top of my blueprint.
 
 ## Credits
 
