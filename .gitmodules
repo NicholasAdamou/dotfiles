@@ -7,3 +7,6 @@
 [submodule ".dotfiles/modules/preferences/apps/vscode"]
 	path = .dotfiles/modules/preferences/apps/vscode
 	url = https://nicholasadamou@github.com/nicholasadamou/vs-code-setup
+[submodule ".dotfiles/utilities"]
+	path = .dotfiles/utilities
+	url = https://nicholasadamou@github.com/nicholasadamou/utilities
