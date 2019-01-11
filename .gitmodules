@@ -1,0 +1,9 @@
+[submodule ".dotfiles/modules/preferences/system/fonts/Menlo-for-Powerline"]
+	path = .dotfiles/modules/preferences/system/fonts/Menlo-for-Powerline
+	url = https://nicholasadamou@github.com/abertsch/Menlo-for-Powerline.git
+[submodule ".dotfiles/modules/preferences/system/fonts/nerd-fonts"]
+	path = .dotfiles/modules/preferences/system/fonts/nerd-fonts
+	url = https://nicholasadamou@github.com/ryanoasis/nerd-fonts.git
+[submodule ".dotfiles/modules/preferences/apps/vscode"]
+	path = .dotfiles/modules/preferences/apps/vscode
+	url = https://nicholasadamou@github.com/nicholasadamou/vs-code-setup
