@@ -1,6 +1,6 @@
 # [Nicholas](https://github.com/nicholasadamou)’s Ubuntu dotfiles
 
-Personal MacOS dotfiles, powered by [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian) ✨
+Personal Ubuntu dotfiles, powered by [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian) ✨
 
 ## Setup
 
