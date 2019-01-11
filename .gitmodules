@@ -10,3 +10,4 @@
 [submodule ".dotfiles/utilities"]
 	path = .dotfiles/utilities
 	url = https://nicholasadamou@github.com/nicholasadamou/utilities
+    branch = linux
