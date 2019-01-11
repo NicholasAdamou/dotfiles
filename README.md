@@ -21,7 +21,7 @@ That's it! ✨
 
 ## What's inside
 
-1.  A `rcm` tag called [macos](.dotfiles/tag-ubuntu) and an adapted `rcrc` file.
+1.  A `rcm` tag called [ubuntu](.dotfiles/tag-ubuntu) and an adapted `rcrc` file.
 2.  [A variety of modules](https://github.com/nicholasadamou/set-me-up/tree/debian/.dotfiles/modules). Read more about the available modules in the [available modules](https://github.com/nicholasadamou/set-me-up#available-modules) section.
 3.  [Installer](.dotfiles/modules/install.sh) that is required to download `set-me-up` on top of my blueprint.
 
