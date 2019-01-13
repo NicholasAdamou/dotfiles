@@ -1,14 +1,13 @@
 function update --description "Updates MacOS apps, brew, npm, fisher, omf update, pip, pip3 and their installed packages"
-    sudo softwareupdate --install --all
-
-    if type -q mas
-        mas upgrade
-    end
+    sudo apt update
+    sudo apt upgrade -y
+    sudo apt full-upgrade -y
+    sudo apt autoremove -y
+    sudo apt clean
 
     if type -q brew
         brew update
         brew upgrade
-        brew cu --all --yes --cleanup --quiet
         brew cleanup
     end
 
