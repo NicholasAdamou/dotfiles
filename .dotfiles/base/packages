@@ -1,3 +1,4 @@
 apt "rcm"
 apt "fzf"
+apt "fzy"
 apt "thefuck"
