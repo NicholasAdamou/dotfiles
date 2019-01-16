@@ -1,3 +1,2 @@
 apt "rcm"
-apt "tmux"
 apt "thefuck"
