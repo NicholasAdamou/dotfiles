@@ -9,6 +9,8 @@ Update-ExecutionPolicy Unrestricted
 
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 
+cinst -y Microsoft-Hyper-V-All -source windowsFeatures
+
 # Restart PowerShell / CMDer before moving on - or run
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
