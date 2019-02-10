@@ -1,0 +1,124 @@
+## Chocolatey
+Import-Module Boxstarter.Chocolatey
+
+## Configure Windows
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+Update-ExecutionPolicy Unrestricted
+
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+
+# Restart PowerShell / CMDer before moving on - or run
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+## Packages
+cinst -y Gow
+
+## Terminal
+cinst -y cmder
+
+## Node, npm
+cinst -y nodejs.install
+npm install -g npm-windows-upgrade gulp yarn bower
+npm-windows-upgrade
+
+## Git
+cinst -y git.install
+cinst -y poshgit
+cinst -y git-credential-winstore
+cinst -y Git-Credential-Manager-for-Windows
+
+## Text Editors
+cinst -y notepadplusplus.install
+cinst -y visualstudiocode
+cinst -y eclipse
+
+## VirtualBox
+cinst -y virtualbox
+cinst -y virtualbox.extensionpack
+
+## Vagrant
+cinst -y vagrant
+vagrant plugin install vagrant-hostsupdater
+
+## Python
+cinst -y python
+cinst -y pip
+cinst -y easy.install
+
+## Java
+cinst -y jdk11
+cinst -y jre8
+
+## Ruby
+cinst -y ruby
+cinst -y ruby.devkit
+
+## Browsers
+cinst -y googlechrome
+cinst -y googlechrome.canary
+cinst -y firfox
+
+## Security
+cinst -y glasswire
+cinst -y sandboxie.install
+cinst -y ccleaner
+cinst -y unchecky
+cinst -y 1password
+cinst -y lastpass
+cinst -y lastpass-for-applications
+cinst -y veracrypt
+
+## Media
+cinst -y vlc
+cinst -y spotify
+
+## Documents
+cinst -y adobereader
+cinst -y 7zip.install
+cinst -y winrar
+
+## Games
+cinst -y steam
+
+## Messaging
+cinst -y discord.install
+
+## Runtimes
+cinst -y adobeair
+cinst -y javeruntime
+cinst -y adobeshockwaveplayer
+cinst -y silverlight
+
+## Online Storage
+cinst -y dropbox
+cinst -y googledrive
+cinst -y megasync
+
+## File Sharing
+cinst -y deluge
+
+## Utilities
+cinst -y gyazo
+cinst -y etcher
+cinst -y vnc-viewer
+cinst -y aquasnap
+cinst -y prepros
+cinst -y putty.install
+cinst -y winscp
+cinst -y filezilla
+cinst -y everything
+cinst -y sysinternals
+cinst -y processhacker.install
+cinst -y tidytabs.install
+cinst -y win32diskimager.install
+
+# Misc.
+msiexec.exe /i http://go.just-install.it
+
+# Taskbar items
+Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
+
+# Windows Updates
+Install-WindowsUpdate -acceptEula
