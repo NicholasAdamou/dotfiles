@@ -35,8 +35,6 @@ I use [`hyper`](https://hyper.is/) as my default terminal application. `hyper` m
 
 If `Windows-Subsystem-Linux` is not installed on your system, follow the guide on the following link: [Windows Subsystem Linux Installation Guide](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10#).
 
-My [`hyper configurations`](https://gist.github.com/nicholasadamou/1c5a6c93fec9a9b6b6aa24bfc30a1e3a/raw/2a7f23903a7e2da1a1e6c7670df87af8fa26fc7e/hyper.js) can be found if you follow that link.
-
 ## Setup
 
 [![xkcd: Automation](http://imgs.xkcd.com/comics/automation.png)](http://xkcd.com/1319/)
