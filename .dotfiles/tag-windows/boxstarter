@@ -1,29 +1,36 @@
-## Chocolatey
-Import-Module Boxstarter.Chocolatey
+### Base Windows Configuration ###
 
 ## Configure Windows
-Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -FeatureName Microsoft-Hyper-V-All -Online -NoRestart
+Enable-WindowsOptionalFeature -FeatureName Containers -Online -NoRestart
+Enable-WindowsOptionalFeature -FeatureName Microsoft-Windows-Subsystem-Linux -Online -NoRestart
 
-Update-ExecutionPolicy Unrestricted
+### Chocolatey Installs ###
 
-Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+# Install Chocolatey: https://chocolatey.org/install
+Set-ExecutionPolicy AllSigned; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-cinst -y Microsoft-Hyper-V-All -source windowsFeatures
+# Enable Chocolatey Autoconfirm
+choco feature enable -n allowGlobalConfirmation
 
-# Restart PowerShell / CMDer before moving on - or run
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+# Install Boxstarter: http://boxstarter.org/InstallBoxstarter
+cinst -y boxstarter
+
+# Install just-install: https://just-install.github.io/
+msiexec.exe /i https://just-install.github.io/stable/just-install.msi
 
 ## Packages
 cinst -y Gow
 
 ## Terminal
 cinst -y cmder
+cinst -y sudo
 
 ## Node, npm
 cinst -y nodejs.install
-npm install -g npm-windows-upgrade gulp yarn bower
+npm install -g npm-windows-upgrade
 npm-windows-upgrade
+just-install yarn
 
 ## Git
 cinst -y git.install
@@ -32,8 +39,10 @@ cinst -y git-credential-winstore
 cinst -y Git-Credential-Manager-for-Windows
 
 ## Text Editors
+cinst -y notepad3
 cinst -y notepadplusplus.install
 cinst -y visualstudiocode
+cinst -y vscode-settingssync
 cinst -y eclipse
 
 ## VirtualBox
@@ -61,6 +70,7 @@ cinst -y ruby.devkit
 cinst -y googlechrome
 cinst -y googlechrome.canary
 cinst -y firfox
+just-install firefox-developer-edition
 
 ## Security
 cinst -y glasswire
@@ -89,7 +99,7 @@ cinst -y discord.install
 
 ## Runtimes
 cinst -y adobeair
-cinst -y javeruntime
+cinst -y javaruntime
 cinst -y adobeshockwaveplayer
 cinst -y silverlight
 
@@ -115,12 +125,21 @@ cinst -y sysinternals
 cinst -y processhacker.install
 cinst -y tidytabs.install
 cinst -y win32diskimager.install
+cinst -y dotnetcore
 
-# Misc.
-msiexec.exe /i http://go.just-install.it
+# Fonts
+cinst -y firacode
+cinst -y inconsolata
+cinst -y hackfont
 
 # Taskbar items
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 
 # Windows Updates
 Install-WindowsUpdate -acceptEula
+
+# Boxstarter Configuration Commands (gcm -module Boxstarter.WinConfig)
+Set-WindowsExplorerOptions -EnableShowFileExtensions -DisableOpenFileExplorerToQuickAccess -DisableShowFrequentFoldersInQuickAccess -DisableShowRecentFilesInQuickAccess
+Disable-BingSearch
+Disable-GameBarTips
+Enable-RemoteDesktop
