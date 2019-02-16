@@ -6,7 +6,7 @@ Personal Windows Sub-System Linux dotfiles, powered by [nicholasadamou/set-me-up
 
 In order to install my `dotfiles` repository, you have to install `Windows-Subsystem-Linux`.
 
-If `Windows-Subsystem-Linux` is not installed on your system, follow the guide on the following link: [Windows Subsystem Linux Installation Guide](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10#).
+If `Windows-Subsystem-Linux` is not installed on your system, follow the [Windows Subsystem Linux Installation Guide](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10#) to install and set-up `Windows-Subsystem-Linux`.
 
 ## Setup
 
