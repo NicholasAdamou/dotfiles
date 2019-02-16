@@ -6,7 +6,7 @@ Personal Windows Sub-System Linux dotfiles, powered by [nicholasadamou/set-me-up
 
 In order to install my `dotfiles` repository, you have to install my [`boxstarter`](http://boxstarter.org/) setup.
 
-To install my [`boxstarter configurations`](.dotfiles/tag-windows/boxstarter), follow these steps:
+To install my [`boxstarter configurations`](https://gist.github.com/nicholasadamou/1b0d2a55f38981063f5ae545e9ad16a1/raw/1267b6bf4e8fd4a42e21d5ae67cadb61e204cb73/boxstarter), follow these steps:
 
 1. Install [Boxstarter Modules](https://boxstarter.org/Learn/WebLauncher). You can download the Boxstarter module installer from [this web site](https://boxstarter.org/downloads/Boxstarter.2.11.0.zip) or you can use [Chocolatey to install Boxstarter](https://boxstarter.org/InstallBoxstarter). Alternatively, you may invoke the module installer over the web using PowerShell.
 
@@ -25,13 +25,8 @@ To install my [`boxstarter configurations`](.dotfiles/tag-windows/boxstarter), f
 2. Invoke the `Install-BoxstarterPackage` command pointing to my gist linked above:
 
     ```powershell
-    START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/nicholasadamou/dotfiles/windows/.dotfiles/tag-windows/boxstarter
+    START http://boxstarter.org/package/nr/url?https://gist.github.com/nicholasadamou/1b0d2a55f38981063f5ae545e9ad16a1/raw/1267b6bf4e8fd4a42e21d5ae67cadb61e204cb73/boxstarter
     ```
-
-I use [`hyper`](https://hyper.is/) as my default terminal application. `hyper` must be configured to start `bash` as the start-up shell. To configure `hyper` to start with `bash` as the default shell, do the following:
-
-1. open `.hyper.js` configuration file
-2. Find the `shell` line and change it to `shell: 'C:\\Windows\\System32\\bash.exe',`.
 
 If `Windows-Subsystem-Linux` is not installed on your system, follow the guide on the following link: [Windows Subsystem Linux Installation Guide](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10#).
 
