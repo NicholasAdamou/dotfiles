@@ -12,12 +12,7 @@ declare current_dir && \
 main() {
 
     print_in_purple "  Ubuntu Preferences\n\n"
-
-
-    brew_bundle_install "brewfile"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+    
     # App preferences
     ./apps/terminal/terminal.sh
 
