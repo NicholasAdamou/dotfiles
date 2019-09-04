@@ -3,7 +3,7 @@ function update --description "Updates MacOS apps, brew, npm, fisher, omf update
     	nordvpn connect
     end
     
-    sudo killall apt > /dev/null ^ /dev/null
+    sudo killall apt apt-get -q
     sudo dpkg --configure -a
     
     sudo apt update
