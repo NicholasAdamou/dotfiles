@@ -1,4 +1,11 @@
 function update --description "Updates MacOS apps, brew, npm, fisher, omf update, pip, pip3 and their installed packages"
+    if type -q nordvpn
+    	nordvpn connect
+    end
+    
+    sudo killall apt > /dev/null ^ /dev/null
+    sudo dpkg --configure -a
+    
     sudo apt update
     sudo apt upgrade -y
     sudo apt dist-upgrade -y
