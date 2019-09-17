@@ -1,0 +1,4 @@
+# text editors
+gpg_dearmor "https://packages.microsoft.com/keys/microsoft.asc" [args: "microsoft.gpg"]
+source "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" [args: "vscode.list"]
+apt "code"
