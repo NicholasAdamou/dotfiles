@@ -4,3 +4,6 @@
 [submodule ".dotfiles/tag-kali/payloads/WiFi/WiFi-Pumpkin"]
 	path = .dotfiles/tag-kali/payloads/WiFi/WiFi-Pumpkin
 	url = https://github.com/P0cL4bs/WiFi-Pumpkin
+[submodule ".dotfiles/tag-kali/payloads/hak5/wifi-pineapple/utils/wp6"]
+	path = .dotfiles/tag-kali/payloads/hak5/wifi-pineapple/utils/wp6
+	url = https://github.com/hak5darren/wp6
