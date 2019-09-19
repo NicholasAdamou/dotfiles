@@ -21,7 +21,7 @@ configure_visual_studio_code() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    if ! [ "$(code --list-extensions | grep $extension)" == "$extension" ]; then
+    if ! [ "$(code --user-data-dir /root --list-extensions | grep $extension)" == "$extension" ]; then
         execute \
             "code --user-data-dir /root --install-extension $extension" \
             "code ($extension)"
