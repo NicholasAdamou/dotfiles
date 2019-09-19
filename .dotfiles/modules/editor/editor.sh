@@ -23,7 +23,7 @@ configure_visual_studio_code() {
 
     if ! [ "$(code --list-extensions | grep $extension)" == "$extension" ]; then
         execute \
-            "code --install-extension $extension" \
+            "code --user-data-dir /root --install-extension $extension" \
             "code ($extension)"
     else
         print_success "($extension) is already installed"

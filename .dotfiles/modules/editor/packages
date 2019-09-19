@@ -1,5 +1,5 @@
 # text editors
-gpg_dearmor "https://packages.microsoft.com/keys/microsoft.asc" [args: "microsoft.gpg"]
-source "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" [args: "vscode.list"]
+gpg_dearmor "microsoft.gpg" [args: "https://packages.microsoft.com/keys/microsoft.asc"]
+source "vscode.list" [args: "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main"]
 apt "code"
 apt "shellcheck"
