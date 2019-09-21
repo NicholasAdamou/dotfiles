@@ -6,7 +6,7 @@
 declare current_dir && \
     current_dir="$(dirname "${BASH_SOURCE[0]}")" && \
     cd "${current_dir}" && \
-    source "$HOME/set-me-up/.dotfiles/utilities/utils.sh"
+    source "$HOME/set-me-up/.dotfiles/utilities/utilities.sh"
 
 declare WALLPAPER_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/system/wallpaper"
 
