@@ -1,11 +1,11 @@
 function update --description "Updates MacOS apps, brew, npm, fisher, omf update, pip, pip3 and their installed packages"
-    if type -q nordvpn
-    	nordvpn connect
+    if type -q nordvpn && nordvpn status | grep "Status" | grep "connected"
+        nordvpn connect
     end
-    
+
     sudo killall apt apt-get -q
     sudo dpkg --configure -a
-    
+
     sudo apt update
     sudo apt upgrade -y
     sudo apt autoremove -y --purge
