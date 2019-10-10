@@ -3,3 +3,4 @@ gpg_dearmor "microsoft.gpg" [args: "https://packages.microsoft.com/keys/microsof
 source "vscode.list" [args: "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main"]
 apt "code"
 apt "shellcheck"
+snap "pycharm-community" "--classic"

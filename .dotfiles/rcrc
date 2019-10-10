@@ -1,3 +1,2 @@
 TAGS="kali smu"
-EXCLUDES="base modules utilities"
-UNDOTTED="payloads"
+EXCLUDES="base modules utilities payloads"
