@@ -2,6 +2,7 @@ apt "rcm"
 apt "fzf"
 apt "fzy"
 apt "thefuck"
+apt "gdebi"
 apt "symlinks"
 apt "beef-xss"
 
