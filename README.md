@@ -26,18 +26,18 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 ```bash
 cd $HOME && \
     ./set-me-up/smu -p 
-        -m xcode
-        -m basher
-        -m editor
-        -m essentials
-        -m go
-        -m java
-        -m php
-        -m python
-        -m ruby
-        -m rust
-        -m terminal
-        -m web
+        -m xcode \
+        -m terminal \
+        -m editor \
+        -m essentials \
+        -m web \
+        -m basher \
+        -m go \
+        -m java \
+        -m php \
+        -m python \
+        -m ruby \
+        -m rust \
         -m preferences
  ```
  
