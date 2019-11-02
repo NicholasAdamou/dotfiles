@@ -21,14 +21,14 @@ That's it! ✨
 
 ## Snippets
 
-To quickly install **all** modules provided with my `dotfiles`, simply run the snippet in [`iTerm2`](https://www.iterm2.com/) or `terminal` after running the above:
+To quickly install **all** modules provided with my `dotfiles`, simply run the snippet in `terminal` after running the above:
 
 ```bash
 cd $HOME && \
-    ./set-me-up/smu -p 
-        -m editor
-        -m terminal
-        -m docker
+    ./set-me-up/smu -p \
+        -m editor \
+        -m terminal \
+        -m docker \
         -m preferences
  ```
  
