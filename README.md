@@ -24,7 +24,7 @@ That's it! ✨
 To quickly install **all** modules provided with my `dotfiles`, simply run the snippet in [`iTerm2`](https://www.iterm2.com/) or `terminal` after running the above:
 
 ```bash
-cd $HOME & \
+cd $HOME && \
     ./set-me-up/smu -p 
         -m xcode
         -m basher
