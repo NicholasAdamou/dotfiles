@@ -25,6 +25,26 @@ bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/wind
 
 That's it! ✨
 
+## Snippets
+
+To quickly install **all** modules provided with my `dotfiles`, simply run the snippet in [`iTerm2`](https://www.iterm2.com/) or `terminal` after running the above:
+
+```bash
+cd $HOME && \
+    ./set-me-up/smu -p 
+        -m terminal
+        -m web
+        -m basher
+        -m go
+        -m java
+        -m php
+        -m python
+        -m ruby
+        -m rust
+ ```
+ 
+ Happy hacking! 🚀
+
 ## Removal
 
 To completely remove my `dotfiles` from your system, simply
