@@ -19,6 +19,30 @@ bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/mast
 
 That's it! ✨
 
+## Snippets
+
+To quickly install **all** modules provided with my `dotfiles`, simply run the snippet in [`iTerm2`](https://www.iterm2.com/) or `terminal` after running the above:
+
+```bash
+cd $HOME & \
+    ./set-me-up/smu -p 
+        -m xcode
+        -m basher
+        -m editor
+        -m essentials
+        -m go
+        -m java
+        -m php
+        -m python
+        -m ruby
+        -m rust
+        -m terminal
+        -m web
+        -m preferences
+ ```
+ 
+ Happy hacking! 🚀
+
 ## What's inside
 
 1.  A `rcm` tag called [macos](.dotfiles/tag-macos) and an adapted `rcrc` file.
