@@ -25,7 +25,7 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 
 ```bash
 cd $HOME && \
-    ./set-me-up/smu -p 
+    ./set-me-up/smu -p \
         -m xcode \
         -m terminal \
         -m editor \
