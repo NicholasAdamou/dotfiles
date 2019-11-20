@@ -11,6 +11,23 @@ declare -r FONTS_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/system
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+download_fonts() {
+
+    execute \
+        "git clone --depth 1 https://github.com/ryanoasis/nerd-fonts" \
+        "nerd-fonts (download)"
+
+}
+
+update_fonts() {
+
+    execute \
+        "cd $FONTS_DIRECTORY && \
+        git pull" \
+        "nerd-fonts (update)"
+
+}
+
 install_fnts() {
 
 	declare -a FNTS=(
@@ -64,6 +81,12 @@ main() {
     apt_install_from_file "packages"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    if ! [ -d "$FONTS_DIRECTORY" ]; then
+        download_fonts
+    else
+        update_fonts
+    fi
 
     install_fnts
     install_patched_fnts
