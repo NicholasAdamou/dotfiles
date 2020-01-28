@@ -27,18 +27,17 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 cd $HOME && \
     ./set-me-up/smu -p \
         -m xcode \
-        -m terminal \
-        -m editor \
-        -m essentials \
+        -m app_store \
+        -m casks \
+        -m formulae \
+        -m preferences \
         -m web \
-        -m basher \
         -m go \
         -m java \
         -m php \
         -m python \
         -m ruby \
-        -m rust \
-        -m preferences
+        -m rust
  ```
  
  Happy hacking! 🚀
