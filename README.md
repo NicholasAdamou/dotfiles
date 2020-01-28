@@ -30,6 +30,7 @@ cd $HOME && \
         -m app_store \
         -m casks \
         -m formulae \
+        -m terminal \
         -m preferences \
         -m web \
         -m go \
