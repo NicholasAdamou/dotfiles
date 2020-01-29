@@ -30,14 +30,7 @@ cd $HOME && \
         -m casks \
         -m formulae \
         -m preferences \
-        -m xcode \
-        -m web \
-        -m go \
-        -m java \
-        -m php \
-        -m python \
-        -m ruby \
-        -m rust
+        -m web
  ```
  
  Happy hacking! 🚀
