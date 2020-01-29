@@ -26,12 +26,11 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 ```bash
 cd $HOME && \
     ./set-me-up/smu -p \
-        -m xcode \
         -m app_store \
         -m casks \
         -m formulae \
-        -m terminal \
         -m preferences \
+        -m xcode \
         -m web \
         -m go \
         -m java \
