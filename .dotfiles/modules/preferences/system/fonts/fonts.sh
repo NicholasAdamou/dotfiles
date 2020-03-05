@@ -13,9 +13,7 @@ declare -r FONTS_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/system
 
 download_fonts() {
 
-    execute \
-        "git clone --depth 1 https://github.com/ryanoasis/nerd-fonts" \
-        "nerd-fonts (download)"
+    git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 
 }
 
@@ -40,12 +38,8 @@ install_fnts() {
 
 			if cmd_exists "font-manager"; then
 				if ! [[ "$(font-manager --list | grep "$fnt")" =~ $fnt ]];  then
-					execute \
-					    "font-manager --install $FONTS_DIRECTORY/$( echo "$fnt" | sed 's/ /\\\ /g' )/*" \
-						"font-manager (install $fnt)"
-				else
-                    print_success "($fnt) is already installed."
-                fi
+					font-manager --install "$FONTS_DIRECTORY"/$( echo "$fnt" | sed 's/ /\\\ /g' )/*
+				fi
 			fi
 		done
 
@@ -64,11 +58,7 @@ install_patched_fnts() {
     for fnt in "${FNTS[@]}";
         do
             if ! [[ "$(font-manager --list | grep "$fnt")" =~ $fnt ]];  then
-                execute \
-                    "$FONTS_DIRECTORY/nerd-fonts/install.sh -q -l $fnt" \
-                    "Nerd-Fonts (install $fnt)"
-            else
-                print_success "($fnt) is already installed."
+                ${FONTS_DIRECTORY}/nerd-fonts/install.sh -q -l "$fnt"
             fi
         done
 
@@ -76,13 +66,11 @@ install_patched_fnts() {
 
 main() {
 
-    print_in_purple "   Fonts\n\n"
-
     apt_install_from_file "packages"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    if ! [ -d "$FONTS_DIRECTORY" ]; then
+    if ! [[ -d "$FONTS_DIRECTORY" ]]; then
         download_fonts
     else
         update_fonts

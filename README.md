@@ -27,17 +27,10 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 cd $HOME && \
     ./set-me-up/smu -p \
         -m terminal \
+        -m formulae \
         -m editor \
-        -m essentials \
         -m nordvpn \
-        -m web \
-        -m basher \
-        -m go \
-        -m java \
-        -m php \
-        -m python \
-        -m ruby \
-        -m rust
+        -m web
  ```
  
  Happy hacking! 🚀
