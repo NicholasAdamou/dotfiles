@@ -11,9 +11,7 @@ declare current_dir && \
 
 main() {
 
-    print_in_purple "  Docker\n\n"
-
-	apt_install_from_file "packages"
+    apt_install_from_file "packages"
 
 }
 

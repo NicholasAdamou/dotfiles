@@ -26,8 +26,6 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 ```bash
 cd $HOME && \
     ./set-me-up/smu -p \
-        -m editor \
-        -m terminal \
         -m docker \
         -m preferences
  ```
@@ -47,7 +45,8 @@ cd $HOME && \
 -   [argbash.io](https://argbash.io/) enabling library free and sane argument parsing.
 -   [brew](https://brew.sh/) and [brew bundle](https://github.com/Homebrew/homebrew-bundle) for the awesome package management.
 -   [thoughtbot rcm](https://github.com/thoughtbot/rcm) for easy dotfile management.
--   All of the authors of the installed applications via `set-me-up` , I am in no way connected to any of them.
+-   All of the authors of the installed applications via `set-me-up` -   All of the authors of the installed applications via `set-me-up` , I am in no way connected to any of them.
+ , I am in no way connected to any of them.
 
 Should I miss your name on the credits list please let me know :heart:
 
