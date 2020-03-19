@@ -15,6 +15,13 @@ understand [what it does](.dotfiles/modules/install.sh). Seriously, **DON'T**!)
 bash <(curl -s -L https://raw.githubusercontent.com/nicholasadamou/dotfiles/ubuntu/.dotfiles/modules/install.sh)
 ```
 
+⚠️ Please note in order to successfully install my `dotfiles`, you must install `curl` and `git` prior to executing the above snippet.
+
+
+```bash
+sudo apt install curl git -y
+```
+
 ⚠️ Please note that more about the installation process can be found at [nicholasadamou/set-me-up](https://github.com/nicholasadamou/set-me-up/tree/debian).
 
 That's it! ✨
