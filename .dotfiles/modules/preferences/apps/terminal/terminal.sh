@@ -2,4 +2,10 @@
 
 # shellcheck source=/dev/null
 
-./gnome-terminal-profile import solarized
+declare current_dir && \
+    current_dir="$(dirname "${BASH_SOURCE[0]}")" && \
+    cd "${current_dir}"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+./gnome-terminal-profile/gnome-terminal-profile import solarized
