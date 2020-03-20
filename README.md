@@ -33,11 +33,11 @@ To quickly install **all** modules provided with my `dotfiles`, simply run the s
 ```bash
 cd $HOME && \
     ./set-me-up/smu -p \
-        -m terminal \
         -m formulae \
         -m editor \
         -m nordvpn \
-        -m web
+        -m web \
+        -m preferences
  ```
  
  Happy hacking! 🚀
