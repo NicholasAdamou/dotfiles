@@ -2,4 +2,4 @@
 
 # shellcheck source=/dev/null
 
-gnome-terminal-profile import solarized
+./gnome-terminal-profile import solarized
