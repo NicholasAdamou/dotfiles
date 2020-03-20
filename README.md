@@ -66,4 +66,4 @@ The creator of this repo is _not responsible_ if your machine ends up in a state
 
 ## License
 
-The code is available under the [MIT license](LICENSE.txt).
+The code is available under the [MIT license](LICENSE).
