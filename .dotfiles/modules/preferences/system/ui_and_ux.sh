@@ -32,3 +32,4 @@ dconf write /org/gnome/shell/favorite-apps "[
 if command -v "hostnamectl" &>/dev/null; then
     hostnamectl set-hostname ubuntu
 fi
+
