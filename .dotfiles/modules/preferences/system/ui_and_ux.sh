@@ -9,13 +9,6 @@ declare WALLPAPER_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/syste
 gsettings set org.gnome.desktop.background picture-uri "file:///$WALLPAPER_DIRECTORY/beach.jpeg"
 gsettings set org.gnome.desktop.background picture-options 'stretched'
 
-gsettings set com.canonical.indicator.bluetooth visible false
-
-gsettings set com.canonical.indicator.sound visible false
-
-gsettings set com.canonical.indicator.power icon-policy 'charge' && \
-         gsettings set com.canonical.indicator.power show-time false
-
 gsettings set com.canonical.indicator.datetime custom-time-format '%l:%M %p' && \
          gsettings set com.canonical.indicator.datetime time-format 'custom'
 
