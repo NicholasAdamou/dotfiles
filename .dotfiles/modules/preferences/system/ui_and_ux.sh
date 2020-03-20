@@ -9,10 +9,16 @@ declare WALLPAPER_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/syste
 gsettings set org.gnome.desktop.background picture-uri "file:///$WALLPAPER_DIRECTORY/beach.jpeg"
 gsettings set org.gnome.desktop.background picture-options 'stretched'
 
-gsettings set com.canonical.indicator.datetime custom-time-format '%l:%M %p' && \
-         gsettings set com.canonical.indicator.datetime time-format 'custom'
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///$WALLPAPER_DIRECTORY/beach.jpeg"
+gsettings set org.gnome.desktop.screensaver picture-options 'stretched'
 
 gsettings set org.gnome.libgnomekbd.keyboard layouts \"[ 'us' ]\"
+
+gsettings set org.gnome.desktop.interface clock-format '12h'
+gsettings set org.gnome.desktop.interface clock-format '12h'
+gsettings set org.gnome.desktop.datetime automatic-timezone true
+
+gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
 
 #see: https://askubuntu.com/a/1026532
 dconf write /org/gnome/shell/favorite-apps "[

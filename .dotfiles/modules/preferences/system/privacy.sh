@@ -4,6 +4,6 @@
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-gsettings set com.canonical.Unity.Lenses remote-content-search 'none'
-
-gsettings set com.canonical.Unity.ApplicationsLens display-available-apps false
+gsettings set org.gnome.desktop.privacy report-technical-problems false
+gsettings set org.gnome.desktop.privacy send-software-usage-stats false
+gsettings set org.gnome.desktop.privacy hide-identity false
