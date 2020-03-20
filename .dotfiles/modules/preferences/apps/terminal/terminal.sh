@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# shellcheck source=/dev/null
+
 PROFILE="$(dconf list /org/gnome/terminal/legacy/profiles:/ | sed 's./..')"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
