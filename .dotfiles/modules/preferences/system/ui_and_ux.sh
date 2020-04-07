@@ -1,18 +1,17 @@
-
 #!/bin/bash
 
 # shellcheck source=/dev/null
-
-declare current_dir && \
-    current_dir="$(dirname "${BASH_SOURCE[0]}")" && \
-    cd "${current_dir}" && \
-    source "$HOME/set-me-up/.dotfiles/utilities/utilities.sh"
 
 declare WALLPAPER_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/system/wallpaper"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "   UI & UX\n\n"
+gsettings set org.gnome.desktop.background picture-uri "file:///$WALLPAPER_DIRECTORY/kali-red-background.jpg"
+gsettings set org.gnome.desktop.background picture-options 'stretched'
 
-execute "gsettings set org.gnome.desktop.background picture-uri 'file:///$WALLPAPER_DIRECTORY/kali-red-background.jpg'" \
-    "Set desktop wallpaper"
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///$WALLPAPER_DIRECTORY/kali-red-background.jpg"
+gsettings set org.gnome.desktop.screensaver picture-options 'stretched'
+
+gsettings set org.gnome.desktop.interface clock-format '12h'
+gsettings set org.gnome.desktop.interface clock-format '12h'
+gsettings set org.gnome.desktop.datetime automatic-timezone true
