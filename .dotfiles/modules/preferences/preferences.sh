@@ -12,8 +12,6 @@ declare current_dir && \
 
 main() {
 
-    print_in_purple "  Kali-Linux Preferences\n\n"
-
     # System preferences
     ./system/ui_and_ux.sh
 
