@@ -38,13 +38,6 @@ cd $HOME && \
  
  Happy hacking! 🚀
 
-## Removal
-
-To completely remove my `dotfiles` from your system, simply
-run the following snippet in the `cmd.exe` terminal:
-
-`lxrun /uninstall /full # Uninstalls the current installation of WSL`
-
 ## What's inside
 
 1.  A `rcm` tag called [windows](.dotfiles/tag-windows) and an adapted `rcrc` file.
