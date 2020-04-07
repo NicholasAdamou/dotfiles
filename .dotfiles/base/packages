@@ -1,3 +1,4 @@
+apt "fish"
 apt "fzf"
 apt "fzy"
 apt "thefuck"
