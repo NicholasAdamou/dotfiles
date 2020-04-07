@@ -136,9 +136,9 @@ main() {
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
    	# We must now symlink our dotfiles prior to executing any other function.
-    	# This is required because any further action will require our dotfiles
-    	# to be present in our $HOME directory.
-    	symlink
+	# This is required because any further action will require our dotfiles
+	# to be present in our $HOME directory.
+	symlink
 	
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
