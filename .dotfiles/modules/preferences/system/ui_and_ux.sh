@@ -11,4 +11,4 @@ xfconf-query -c xfce4-desktop \
     -s "$WALLPAPER_DIRECTORY/kali-red-background.jpg"
 
 
-hostnamectl set-hostname "m3m0ry"
+sudo hostnamectl set-hostname "m3m0ry"
