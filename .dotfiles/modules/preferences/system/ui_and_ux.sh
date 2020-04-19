@@ -9,7 +9,6 @@ declare WALLPAPER_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/syste
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 action "Change Desktop Wallpaper to $WALLPAPER_DIRECTORY/kali-red-background.jpg"
-
 xfconf-query -c xfce4-desktop \
     -p /backdrop/screen0/monitorVirtual1/workspace0/last-image \
     -s "$WALLPAPER_DIRECTORY/kali-red-background.jpg"
