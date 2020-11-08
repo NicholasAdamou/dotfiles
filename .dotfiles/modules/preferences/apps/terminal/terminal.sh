@@ -9,4 +9,4 @@ declare current_dir && \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ./gnome-terminal-profile/gnome-terminal-profile import solarized
-./nord-gnome-terminal/nord.sh --profile nord
+./nord-gnome-terminal/src/sh/nord.sh --profile nord
