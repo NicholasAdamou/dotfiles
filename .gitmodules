@@ -1,3 +1,6 @@
 [submodule ".dotfiles/modules/preferences/system/fonts/Menlo-for-Powerline"]
 	path = .dotfiles/modules/preferences/system/fonts/Menlo-for-Powerline
 	url = https://nicholasadamou@github.com/abertsch/Menlo-for-Powerline.git
+[submodule ".dotfiles/modules/preferences/apps/terminal/nord-gnome-terminal"]
+	path = .dotfiles/modules/preferences/apps/terminal/nord-gnome-terminal
+	url = https://github.com/arcticicestudio/nord-gnome-terminal
