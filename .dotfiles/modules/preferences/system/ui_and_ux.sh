@@ -6,10 +6,10 @@ declare WALLPAPER_DIRECTORY="$HOME/set-me-up/.dotfiles/modules/preferences/syste
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-gsettings set org.gnome.desktop.background picture-uri "file:///$WALLPAPER_DIRECTORY/nord.jpeg"
+gsettings set org.gnome.desktop.background picture-uri "file:///$WALLPAPER_DIRECTORY/nord.jpg"
 gsettings set org.gnome.desktop.background picture-options 'stretched'
 
-gsettings set org.gnome.desktop.screensaver picture-uri "file:///$WALLPAPER_DIRECTORY/nord.jpeg"
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///$WALLPAPER_DIRECTORY/nord.jpg"
 gsettings set org.gnome.desktop.screensaver picture-options 'stretched'
 
 gsettings set org.gnome.desktop.interface clock-format '12h'
